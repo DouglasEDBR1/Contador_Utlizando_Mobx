@@ -47,14 +47,16 @@ class _HomeState extends State<Home> {
               padding: EdgeInsets.only(top: 200),
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.lightGreen
+                    primary: Colors.lightGreen,
+                    shape: CircleBorder(),
+                    padding: EdgeInsets.all(16)
                   ),
                   onPressed: (){
                     controller.incrementar();
                   },
                   child: Text(
-                    'Acrescentar',
-                    style: TextStyle(color: Colors.black, fontSize: 14),
+                    '+',
+                    style: TextStyle(color: Colors.black, fontSize: 20),
                   ),
               ),
             )
